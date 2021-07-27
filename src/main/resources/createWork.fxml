@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MakeTheFuture.controllers.CreateWorkController">
+   <children>
+      <ImageView fitHeight="960.0" fitWidth="1280.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@createWorks.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="264.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleGeneralButton" prefHeight="50.0" prefWidth="180.0" text="General Works" textOverrun="CENTER_ELLIPSIS" />
+      <Button layoutX="1128.0" layoutY="858.0" mnemonicParsing="false" onAction="#handleBackButton" text="back" />
+      <Button layoutX="264.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleForwardButton" prefHeight="50.0" prefWidth="180.0" text="Forwarding Works" textOverrun="CENTER_ELLIPSIS" />
+      <Button layoutX="264.0" layoutY="643.0" mnemonicParsing="false" onAction="#handleProjectButton" prefHeight="50.0" prefWidth="180.0" text="Project Works" textOverrun="CENTER_ELLIPSIS" />
+      <Button layoutX="264.0" layoutY="539.0" mnemonicParsing="false" onAction="#handleWeeklyButton" prefHeight="50.0" prefWidth="180.0" text="Weekly Works" />
+      <Button layoutX="286.0" layoutY="752.0" mnemonicParsing="false" onAction="#handleCategoryButton" prefHeight="40.0" prefWidth="137.0" text="Categories" />
+      <Label layoutX="26.0" layoutY="70.0" prefHeight="157.0" prefWidth="966.0" text="Create New Work">
+         <font>
+            <Font name="System Bold Italic" size="100.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

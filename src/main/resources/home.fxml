@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MakeTheFuture.controllers.HomeController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="1024.0" fitWidth="1280.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@schedule.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="613.0" layoutY="821.0" mnemonicParsing="false" onAction="#handleHelpButton" prefHeight="31.0" prefWidth="67.0" text="Help" />
+      <Button layoutX="613.0" layoutY="880.0" mnemonicParsing="false" onAction="#handleCreatorButton" text="Credits" />
+      <Button layoutX="565.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleCreateWorkButton" prefHeight="41.0" prefWidth="163.0" text="Create new work" />
+      <Label alignment="TOP_CENTER" layoutX="201.0" layoutY="91.0" opacity="0.61" prefHeight="228.0" prefWidth="910.0" style="-fx-background-color: #dbdbdb; -fx-background-radius: 10;" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="60.0" />
+         </font>
+      </Label>
+      <Button layoutX="565.0" layoutY="498.0" mnemonicParsing="false" onAction="#handleShowButton" prefHeight="41.0" prefWidth="163.0" text="Summary" />
+      <Label fx:id="warning" layoutX="590.0" layoutY="749.0" prefHeight="47.0" prefWidth="102.0" />
+      <Label alignment="CENTER" layoutX="201.0" layoutY="91.0" prefHeight="228.0" prefWidth="910.0" text="Make The Future" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="100.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

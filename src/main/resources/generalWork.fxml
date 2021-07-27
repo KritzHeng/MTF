@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MakeTheFuture.controllers.general.GeneralController">
+   <children>
+      <ImageView fitHeight="1019.0" fitWidth="1305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@general.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="119.0" layoutY="65.0" opacity="0.64" prefHeight="849.0" prefWidth="1065.0" style="-fx-background-color: #dbdbdb; -fx-background-radius: 10;">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="1043.0" layoutY="834.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="26.0" prefWidth="57.0" text="back" />
+      <Label layoutX="207.0" layoutY="122.0" prefHeight="58.0" prefWidth="283.0" text="Work Name">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="361.0" prefHeight="38.0" prefWidth="103.0" text="Time">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="345.0" prefHeight="47.0" prefWidth="103.0" text="Start">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="411.0" prefHeight="58.0" prefWidth="110.0" text="End">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="527.0" prefHeight="58.0" prefWidth="150.0" text="Priority">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="626.0" prefHeight="58.0" prefWidth="122.0" text="Status">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="priority" layoutX="515.0" layoutY="541.0" prefHeight="25.0" prefWidth="174.0" />
+      <ChoiceBox fx:id="status" layoutX="515.0" layoutY="640.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="datePicker" layoutX="515.0" layoutY="225.0" />
+      <TextField fx:id="nameWorkTextField" layoutX="515.0" layoutY="136.0" prefHeight="39.0" prefWidth="245.0" promptText="Work Name" />
+      <ChoiceBox fx:id="startHour" layoutX="515.0" layoutY="364.0" prefHeight="31.0" prefWidth="71.0" />
+      <ChoiceBox fx:id="endHour" layoutX="515.0" layoutY="429.0" prefHeight="31.0" prefWidth="71.0" />
+      <Button fx:id="updateButton" layoutX="583.0" layoutY="819.0" mnemonicParsing="false" onAction="#handleSubmitButton" prefHeight="25.0" prefWidth="95.0" text="Submit" />
+      <ChoiceBox fx:id="startMin" layoutX="658.0" layoutY="364.0" prefHeight="31.0" prefWidth="71.0" />
+      <ChoiceBox fx:id="endMin" layoutX="658.0" layoutY="430.0" prefHeight="31.0" prefWidth="71.0" />
+      <Label fx:id="warning" alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="730.0" prefHeight="66.0" prefWidth="1055.0" textFill="#b20707">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font></Label>
+      <ChoiceBox fx:id="categoryName" layoutX="879.0" layoutY="364.0" prefHeight="31.0" prefWidth="233.0" />
+      <Label layoutX="902.0" layoutY="273.0" prefHeight="58.0" prefWidth="283.0" text="Category">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font></Label>
+      <Label layoutX="201.0" layoutY="212.0" prefHeight="58.0" prefWidth="218.0" text="Date">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MakeTheFuture.controllers.weekly.ManageWeekly">
+   <children>
+      <ImageView fitHeight="1029.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@weeklyManage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="63.0" layoutY="117.0" opacity="0.64" prefHeight="740.0" prefWidth="1155.0" style="-fx-background-color: #dbdbdb; -fx-background-radius: 10;">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="worksTable" layoutX="80.0" layoutY="200.0" prefHeight="570.0" prefWidth="493.0" />
+      <Label layoutX="150.0" layoutY="125.0" prefHeight="81.0" prefWidth="353.0" text="Weekly List">
+         <font>
+            <Font name="System Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="796.0" layoutY="125.0" prefHeight="88.0" prefWidth="180.0" text="Edit">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateButton" layoutX="873.0" layoutY="770.0" mnemonicParsing="false" onAction="#handleUpdateButton" text="Edit">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="1160.0" layoutY="877.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" prefWidth="73.0" text="Back">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="620.0" layoutY="238.0" prefHeight="45.0" prefWidth="201.0" text="Name Work">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="623.0" layoutY="329.0" prefHeight="26.0" prefWidth="83.0" text="Date">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="613.0" layoutY="488.0" prefHeight="38.0" prefWidth="103.0" text="Time">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="617.0" layoutY="589.0" prefHeight="47.0" prefWidth="135.0" text="Priority">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="617.0" layoutY="635.0" prefHeight="47.0" prefWidth="95.0" text="Status">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="priority" layoutX="832.0" layoutY="597.0" prefHeight="25.0" prefWidth="174.0" />
+      <ChoiceBox fx:id="status" layoutX="832.0" layoutY="651.0" prefHeight="25.0" prefWidth="174.0" />
+      <CheckBox fx:id="sun" layoutX="714.0" layoutY="341.0" mnemonicParsing="false" text="Sun" />
+      <CheckBox fx:id="mon" layoutX="804.0" layoutY="341.0" mnemonicParsing="false" text="Mon" />
+      <CheckBox fx:id="tue" layoutX="909.0" layoutY="341.0" mnemonicParsing="false" text="Tue" />
+      <CheckBox fx:id="thu" layoutX="1132.0" layoutY="341.0" mnemonicParsing="false" text="Thu" />
+      <CheckBox fx:id="fri" layoutX="767.0" layoutY="393.0" mnemonicParsing="false" text="Fri" />
+      <CheckBox fx:id="wen" layoutX="1015.0" layoutY="341.0" mnemonicParsing="false" text="Wen" />
+      <CheckBox fx:id="sat" layoutX="873.0" layoutY="393.0" mnemonicParsing="false" text="Sat" />
+      <Label layoutX="707.0" layoutY="453.0" prefHeight="47.0" prefWidth="103.0" text="Start">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="712.0" layoutY="519.0" prefHeight="26.0" prefWidth="57.0" text="End">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="startHour" layoutX="848.0" layoutY="461.0" prefHeight="31.0" prefWidth="71.0" />
+      <ChoiceBox fx:id="endHour" layoutX="848.0" layoutY="518.0" prefHeight="31.0" prefWidth="71.0" />
+      <ChoiceBox fx:id="startMin" layoutX="948.0" layoutY="461.0" prefHeight="31.0" prefWidth="71.0" />
+      <ChoiceBox fx:id="endMin" layoutX="943.0" layoutY="518.0" prefHeight="31.0" prefWidth="71.0" />
+      <Label fx:id="warning" alignment="CENTER" layoutX="182.0" layoutY="780.0" prefHeight="65.0" prefWidth="680.0" textFill="#b20707">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label fx:id="nameWork" layoutX="804.0" layoutY="232.0" prefHeight="57.0" prefWidth="405.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
