@@ -1,0 +1,5 @@
+Exercise,TestWeeklyWork01,sun-mon-tue,13:05,14:10,3.Low,Ongoing
+Exercise,TestWeeklyWork02,fri-sat,17:17,20:17,1.Important,Ongoing
+Exercise,TestWeeklyWork03,mon,16:13,17:17,2.Normal,Completed
+-,TestWeeklyWork04,sun-mon-thu,14:10,15:25,2.Normal,not started
+HomeWork,TestWeeklyWork05,wen-thu,02:15,05:19,2.Normal,Ongoing 
